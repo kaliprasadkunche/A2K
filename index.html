@@ -45,7 +45,11 @@
         </video>
         <div class="hero-content">
           <h1>Transforming Spaces, Enchanting Lives</h1>
-          <a href="#portfolio" class="cta-button">Explore Our Designs</a>
+          <div class="button-container">
+            <a href="#portfolio" class="cta-button">Explore Our Designs</a>
+            <a href="#contact" class="cta-button">Contact Us</a>
+          </div>
+          
         </div>
       </section>
 
@@ -100,19 +104,21 @@
     <!-- Services Section -->
     <section id="services" class="services">
       <h2>Our Services</h2>
-      <div class="service-card-container">
+      <div class="service-card-container1">
         <div class="service-item">
-          <div class="service-icon">🏠</div>
+          <div><img src="images/Residential.png" class="service-icon" alt="Project 1"/></div>
           <h3>Residential Design</h3>
           <p>Create comfortable and stylish living spaces.</p>
         </div>
         <div class="service-item">
-          <div class="service-icon">🏢</div>
+          <div><img src="images/Commercial.png" class="service-icon" alt="Project 1"/></div>
           <h3>Commercial Design</h3>
           <p>Transform your business environment with our expertise.</p>
         </div>
+       </div>
+       <div class="service-card-container2"> 
         <div class="service-item">
-          <div class="service-icon">🖼️</div>
+          <div><img src="images/3D.png" class="service-icon" alt="Project 1"/></div>
           <h3>3D Rendering</h3>
           <p>Visualize your design with realistic 3D models.</p>
         </div>
@@ -123,30 +129,48 @@
     <section id="portfolio" class="portfolio">
       <h2>Our Portfolio</h2>
       <div class="port-card-container">
-        <a
-          href="images/project1.jpeg"
-          data-lightbox="portfolio"
-          class="portfolio-item"
+        <div
+            href="images/project1.jpeg"
+            data-lightbox="portfolio"
+            class="portfolio-item"
         >
-          <img src="images/project1.jpeg" alt="Project 1" />
-          <div class="portfolio-info">Residential Project</div>
-        </a>
-        <a
-          href="images/project2.jpg"
-          data-lightbox="portfolio"
-          class="portfolio-item"
+            <div class="carousel">
+            <img src="images/ResdentialProject1.jpg" alt="Project 1" class="carousel-slide" />
+            <img src="images/ResdentialProject2.jpg" alt="Project 2" class="carousel-slide" />
+            <img src="images/ResdentialProject3.jpg" alt="Project 3" class="carousel-slide" />
+            <img src="images/ResdentialProject4.jpg" alt="Project 4" class="carousel-slide" />
+            <img src="images/ResdentialProject5.jpg" alt="Project 5" class="carousel-slide" />
+            <img src="images/ResdentialProject6.jpg" alt="Project 6" class="carousel-slide" />
+            </div>
+            <div class="portfolio-info">Residential Project</div>
+        </div>
+        <div
+            href="images/project1.jpeg"
+            data-lightbox="portfolio"
+            class="portfolio-item"
         >
-          <img src="images/project2.jpg" alt="Project 2" />
-          <div class="portfolio-info">Commercial Project</div>
-        </a>
-        <a
-          href="images/project3.jpeg"
-          data-lightbox="portfolio"
-          class="portfolio-item"
+            <div class="carousel">
+            <img src="images/CommercialProj1.jpg" alt="Project 1" class="carousel-slide" />
+            <img src="images/CommercialProj2.jpg" alt="Project 2" class="carousel-slide" />
+            <img src="images/CommercialProj3.jpg" alt="Project 3" class="carousel-slide" />
+            <img src="images/CommercialProj4.jpg" alt="Project 4" class="carousel-slide" />
+            <img src="images/CommercialProj5.jpg" alt="Project 5" class="carousel-slide" />
+            </div>
+            <div class="portfolio-info">Commercial Project</div>
+        </div>
+        <div
+            href="images/project1.jpeg"
+            data-lightbox="portfolio"
+            class="portfolio-item"
         >
-          <img src="images/project3.jpeg" alt="Project 3" />
-          <div class="portfolio-info">3D Rendering</div>
-        </a>
+            <div class="carousel">
+            <img src="images/rendering1.jpg" alt="Project 1" class="carousel-slide" />
+            <img src="images/rendering2.jpg" alt="Project 2" class="carousel-slide" />
+            <img src="images/rendering3.jpg" alt="Project 3" class="carousel-slide" />
+            <img src="images/rendering4.jpeg" alt="Project 4" class="carousel-slide" />
+            </div>
+            <div class="portfolio-info">3D Rendering</div>
+        </div>
       </div>
     </section>
 

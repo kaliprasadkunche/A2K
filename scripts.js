@@ -18,6 +18,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+ // Carousel functionality
+ const carousels = document.querySelectorAll('.carousel');
+  
+ carousels.forEach(carousel => {
+   const slides = carousel.querySelectorAll('.carousel-slide');
+   let currentSlide = 0;
+
+   const showSlide = (index) => {
+     slides.forEach((slide, i) => {
+       slide.classList.toggle('active', i === index);
+     });
+   };
+
+   const nextSlide = () => {
+     currentSlide = (currentSlide + 1) % slides.length;
+     showSlide(currentSlide);
+   };
+
+   showSlide(currentSlide); // Show the first slide
+   setInterval(nextSlide, 3000); // Change slide every 3 seconds
+ });
+
 // Contact form variables
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
