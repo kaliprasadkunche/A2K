@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A2K Interior Design</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logos">
+          <img class="logo" src="images/logo.png" alt="logo" />
+          <span class="logo-text">A2K Interior Design</span>
+        </div>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- <div class="nav-toggle" id="nav-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div> -->
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <video autoplay loop muted class="hero-video">
+          <source src="images/hbgv4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+          <h1>Transforming Spaces, Enchanting Lives</h1>
+          <a href="#portfolio" class="cta-button">Explore Our Designs</a>
+        </div>
+      </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <p>
+          At A2K Interior Design, we believe in transforming spaces to create
+          magical experiences. Our mission is to design interiors that not only
+          look good but also feel good. Our dedicated team works closely with
+          clients to bring their visions to life.
+        </p>
+        <div class="card-container">
+          <div class="team-member">
+            <img src="images/team-member1.png" alt="Team Member 1" />
+            <div class="team-info">
+              <h3>John Doe</h3>
+              <p>Lead Designer</p>
+              <div class="bio">
+                John is an experienced designer with a passion for modern and
+                innovative interior solutions.
+              </div>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="images/team-member2.png" alt="Team Member 2" />
+            <div class="team-info">
+              <h3>Jane Smith</h3>
+              <p>Project Manager</p>
+              <div class="bio">
+                Jane ensures that all projects run smoothly and on time, with a
+                focus on client satisfaction.
+              </div>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="images/team-member3.png" alt="Team Member 3" />
+            <div class="team-info">
+              <h3>Mark Johnson</h3>
+              <p>Architect</p>
+              <div class="bio">
+                Mark specializes in creating functional and aesthetically
+                pleasing architectural designs.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-card-container">
+        <div class="service-item">
+          <div class="service-icon">🏠</div>
+          <h3>Residential Design</h3>
+          <p>Create comfortable and stylish living spaces.</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🏢</div>
+          <h3>Commercial Design</h3>
+          <p>Transform your business environment with our expertise.</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🖼️</div>
+          <h3>3D Rendering</h3>
+          <p>Visualize your design with realistic 3D models.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <h2>Our Portfolio</h2>
+      <div class="port-card-container">
+        <a
+          href="images/project1.jpeg"
+          data-lightbox="portfolio"
+          class="portfolio-item"
+        >
+          <img src="images/project1.jpeg" alt="Project 1" />
+          <div class="portfolio-info">Residential Project</div>
+        </a>
+        <a
+          href="images/project2.jpg"
+          data-lightbox="portfolio"
+          class="portfolio-item"
+        >
+          <img src="images/project2.jpg" alt="Project 2" />
+          <div class="portfolio-info">Commercial Project</div>
+        </a>
+        <a
+          href="images/project3.jpeg"
+          data-lightbox="portfolio"
+          class="portfolio-item"
+        >
+          <img src="images/project3.jpeg" alt="Project 3" />
+          <div class="portfolio-info">3D Rendering</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+      <h2>Our Blog</h2>
+      <div class="blog-card-container">
+        <div class="blog-post">
+            <video controls>
+                <source src="images/blogv1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+          <div class="blog-content">
+            <h3>Design Trends 2024</h3>
+            <p>
+              Explore the latest trends in interior design for the upcoming
+              year.
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="blog-post">
+            <video controls>
+                <source src="images/blogv2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+          <div class="blog-content">
+            <h3>Maximizing Small Spaces</h3>
+            <p>
+              Learn how to make the most out of small living areas with smart
+              design solutions.
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form class="contact-form" data-form>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    data-form-input
+                    required
+                />
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    data-form-input
+                    required
+                />
+                <input
+                    type="text"
+                    name="phone"
+                    placeholder="Your Phone"
+                    data-form-input
+                />
+                <textarea
+                    name="message"
+                    class="form-input"
+                    placeholder="Your Message"
+                    data-form-input
+                    required
+                ></textarea>
+                <button type="submit" data-form-btn disabled>Send Message</button>
+                <p class="form-message" style="display: none"></p>
+            </form>
+            <div class="contact-info">
+                <div class="para">
+                    <p>Balaji Nagar, Kukatpally</p>
+                    <p>Hyderabad, Telangana, India</p>
+                    <p>Email : a2kinterior@hotmail.com</p>
+                    <p>Contact : 9390930153, 9985464216, 9550156668</p>
+                </div>
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe
+                            title="map"
+                            loading="lazy"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1901.5972947704765!2d78.4110673!3d17.493993!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8d02149b27ff%3A0x6d00db86dd1865d5!2sKukatpally%20Housing%20Board%20Colony%2C%20Kukatpally%2C%20Hyderabad%2C%20Telangana%20500072!5e0!3m2!1sen!2sin!4v1690589329055!5m2!1sen!2sin"
+                            style="border: 0"
+                            allowfullscreen=""
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </figure>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 A2K Interior Design. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <!-- Your other scripts -->
+    <script src="scripts.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("uV7OzM0MUKVRezinx"); // Replace 'YOUR_USER_ID' with your EmailJS user ID
+  })();
+</script>
+  </body>
+</html>
