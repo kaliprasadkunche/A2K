@@ -476,7 +476,7 @@ video {
     transition: transform 0.3s ease;
     cursor: pointer;
     flex: 1 0 300px;
-    min-width: 400px;
+    min-width: 300px;
     height: auto;
     box-sizing: border-box; 
     overflow: hidden; /* Ensures content doesn't overflow */
